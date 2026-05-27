@@ -9,11 +9,15 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 import os
 
-# 邮箱配置（需要主人提供）
-SMTP_SERVER = os.getenv("SMTP_SERVER", "smtp.gmail.com")
-SMTP_PORT = int(os.getenv("SMTP_PORT", "587"))
-EMAIL_ADDRESS = os.getenv("EMAIL_ADDRESS", "")
-EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD", "")
+# 导入配置文件
+try:
+    from email_config import SMTP_SERVER, SMTP_PORT, EMAIL_ADDRESS, EMAIL_PASSWORD
+except ImportError:
+    # 备用配置（环境变量）
+    SMTP_SERVER = os.getenv("SMTP_SERVER", "smtp.qq.com")
+    SMTP_PORT = int(os.getenv("SMTP_PORT", "587"))
+    EMAIL_ADDRESS = os.getenv("EMAIL_ADDRESS", "coinco@qq.com")
+    EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD", "peixkyqxgexbbijf")
 
 def send_email(to_email, subject, body, html_body=None):
     """发送邮件"""

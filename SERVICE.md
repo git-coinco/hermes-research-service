@@ -52,13 +52,16 @@
 
 ### 付款方式
 
-- 支付宝：[待配置]
-- 微信支付：[待配置]
+**支付宝**：扫码付款（收款人：锋）
+**微信支付**：扫码付款（收款人：纽巴迪·江依锋）
+
+> 付款前请先确认服务级别和价格，付款后请截图发给我确认。
 
 ### 联系方式
 
-- 邮箱：[待配置]
-- GitHub：[待配置]
+- **邮箱**：coinco@qq.com
+- **GitHub**：[git-coinco](https://github.com/git-coinco)
+- **网站**：https://git-coinco.github.io/hermes-research-service/
 
 ### 案例展示
 
