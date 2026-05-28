@@ -3,15 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI行业深度洞察·订阅服务 | Hermes Research</title>
+    <title>AI商业化决策辅助系统 | Hermes Research</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: -apple-system, sans-serif; background: #0f0f23; color: #e0e0e0; }
         .hero { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); padding: 60px 20px; text-align: center; }
         .hero h1 { font-size: 2em; color: #fff; margin-bottom: 15px; }
+        .hero p { color: #a0a0a0; max-width: 600px; margin: 0 auto; }
+        .framework { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        .framework h2 { color: #fff; text-align: center; margin-bottom: 30px; }
+        .step { background: #1a1a2e; padding: 20px; border-radius: 8px; margin-bottom: 15px; border-left: 4px solid #e94560; }
+        .step h3 { color: #e94560; }
         .pricing { display: flex; justify-content: center; gap: 20px; padding: 40px 20px; flex-wrap: wrap; }
         .card { background: #1a1a2e; border-radius: 12px; padding: 30px; width: 280px; border: 1px solid #2a2a4a; }
-        .card.featured { border-color: #e94560; transform: scale(1.03); }
+        .card.featured { border-color: #e94560; }
         .card h3 { color: #fff; margin-bottom: 8px; }
         .card .price { font-size: 2em; color: #e94560; font-weight: bold; }
         .card ul { list-style: none; margin: 15px 0; }
@@ -29,8 +34,32 @@
 </head>
 <body>
     <div class="hero">
-        <h1>AI行业深度洞察</h1>
-        <p>每周一份经过验证的行业分析，帮你节省100+小时研究时间</p>
+        <h1>AI商业化决策辅助系统</h1>
+        <p>不只是报告，是帮你做决策的工具。每份报告都包含：可执行建议 + 风险矩阵 + 行动清单。</p>
+    </div>
+
+    <div class="framework">
+        <h2>标准化报告框架</h2>
+        <div class="step">
+            <h3>Step 1: 数据采集</h3>
+            <p>用Python从真实API采集数据，不依赖二手信息</p>
+        </div>
+        <div class="step">
+            <h3>Step 2: 分析建模</h3>
+            <p>用pandas+matplotlib做统计分析和可视化</p>
+        </div>
+        <div class="step">
+            <h3>Step 3: 洞察提炼</h3>
+            <p>从数据中提取可执行的商业洞察</p>
+        </div>
+        <div class="step">
+            <h3>Step 4: 决策框架</h3>
+            <p>提供"如果X则Y"的决策树，让客户看完知道该怎么做</p>
+        </div>
+        <div class="step">
+            <h3>Step 5: 风险矩阵</h3>
+            <p>标注每个决策的风险等级和应对策略</p>
+        </div>
     </div>
 
     <div class="pricing">
@@ -38,60 +67,57 @@
             <h3>免费版</h3>
             <div class="price">¥0</div>
             <ul>
-                <li>每周公开洞察文章</li>
+                <li>公开洞察文章</li>
                 <li>基础市场数据</li>
-                <li>行业趋势简报</li>
+                <li>趋势简报</li>
             </ul>
             <a href="../blog/" class="cta-btn" style="background:#2a2a4a;">查看免费内容</a>
         </div>
         <div class="card featured">
-            <h3>深度版</h3>
+            <h3>决策版</h3>
             <div class="price">¥50<span>/月</span></div>
             <ul>
-                <li>每周完整深度报告</li>
-                <li>独家数据集+代码</li>
-                <li>竞品动态追踪</li>
-                <li>机会窗口预警</li>
-                <li>优先咨询权</li>
+                <li>每周决策辅助报告</li>
+                <li>可执行建议</li>
+                <li>风险矩阵</li>
+                <li>行动清单</li>
+                <li>优先咨询</li>
             </ul>
-            <a href="https://git-coinco.github.io/hermes-research-service/" class="cta-btn">订阅服务</a>
+            <a href="https://git-coinco.github.io/hermes-research-service/" class="cta-btn">订阅</a>
         </div>
         <div class="card">
             <h3>定制版</h3>
             <div class="price">¥200<span>/份</span></div>
             <ul>
-                <li>按需定制研究报告</li>
-                <li>专属数据采集分析</li>
-                <li>3次修改机会</li>
-                <li>7天交付保证</li>
+                <li>定制决策报告</li>
+                <li>专属数据采集</li>
+                <li>完整风险评估</li>
+                <li>7天交付</li>
             </ul>
-            <a href="https://git-coinco.github.io/hermes-research-service/" class="cta-btn" style="background:#2a2a4a;">联系定制</a>
+            <a href="https://git-coinco.github.io/hermes-research-service/" class="cta-btn" style="background:#2a2a4a;">联系</a>
         </div>
     </div>
 
     <div class="reports">
-        <h2>深度报告库</h2>
-        
+        <h2>决策报告库</h2>
         <div class="report-item">
             <div>
-                <h4>AI Agent市场机会分析</h4>
-                <p>基于BotStreet 16个任务的实地数据分析，识别三大机会窗口</p>
+                <h4>AI Agent市场机会决策</h4>
+                <p>数据驱动的市场分析 + 决策框架 + 风险矩阵</p>
             </div>
-            <a href="ai-agent-market-opportunity.html">查看报告 →</a>
+            <a href="ai-agent-market-opportunity.html">查看 →</a>
         </div>
-
         <div class="report-item">
             <div>
-                <h4>AI Agent商业化路径分析</h4>
-                <p>四大商业化路径对比，从任务市场到被动收入的演进策略</p>
+                <h4>AI商业化路径决策</h4>
+                <p>四大路径对比 + 行动清单 + 收入预测</p>
             </div>
-            <a href="ai-agent-monetization-paths.html">查看报告 →</a>
+            <a href="ai-agent-monetization-paths.html">查看 →</a>
         </div>
     </div>
 
     <div class="footer">
-        <p>Hermes Research | AI驱动的深度研究服务</p>
-        <p>GitHub: <a href="https://github.com/git-coinco" style="color:#e94560;">git-coinco</a></p>
+        <p>Hermes Research | AI商业化决策辅助</p>
     </div>
 </body>
 </html>
