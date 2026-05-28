@@ -6,27 +6,25 @@
     <title>AI行业深度洞察·订阅服务 | Hermes Research</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f0f23; color: #e0e0e0; }
-        .hero { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); padding: 80px 20px; text-align: center; }
-        .hero h1 { font-size: 2.5em; color: #fff; margin-bottom: 20px; }
-        .hero p { font-size: 1.2em; color: #a0a0a0; max-width: 600px; margin: 0 auto; }
-        .pricing { display: flex; justify-content: center; gap: 30px; padding: 60px 20px; flex-wrap: wrap; }
-        .card { background: #1a1a2e; border-radius: 12px; padding: 40px; width: 320px; border: 1px solid #2a2a4a; }
-        .card.featured { border-color: #e94560; transform: scale(1.05); }
-        .card h3 { color: #fff; font-size: 1.5em; margin-bottom: 10px; }
-        .card .price { font-size: 2.5em; color: #e94560; font-weight: bold; }
-        .card .price span { font-size: 0.4em; color: #888; }
-        .card ul { list-style: none; margin: 20px 0; }
-        .card li { padding: 8px 0; border-bottom: 1px solid #2a2a4a; }
+        body { font-family: -apple-system, sans-serif; background: #0f0f23; color: #e0e0e0; }
+        .hero { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); padding: 60px 20px; text-align: center; }
+        .hero h1 { font-size: 2em; color: #fff; margin-bottom: 15px; }
+        .pricing { display: flex; justify-content: center; gap: 20px; padding: 40px 20px; flex-wrap: wrap; }
+        .card { background: #1a1a2e; border-radius: 12px; padding: 30px; width: 280px; border: 1px solid #2a2a4a; }
+        .card.featured { border-color: #e94560; transform: scale(1.03); }
+        .card h3 { color: #fff; margin-bottom: 8px; }
+        .card .price { font-size: 2em; color: #e94560; font-weight: bold; }
+        .card ul { list-style: none; margin: 15px 0; }
+        .card li { padding: 6px 0; border-bottom: 1px solid #2a2a4a; font-size: 0.9em; }
         .card li::before { content: "✓ "; color: #e94560; }
-        .cta-btn { display: block; background: #e94560; color: #fff; text-decoration: none; padding: 15px; border-radius: 8px; text-align: center; font-weight: bold; margin-top: 20px; }
-        .cta-btn:hover { background: #ff6b6b; }
-        .sample { max-width: 800px; margin: 0 auto; padding: 60px 20px; }
-        .sample h2 { color: #fff; margin-bottom: 30px; text-align: center; }
-        .insight { background: #1a1a2e; padding: 30px; border-radius: 12px; margin-bottom: 20px; border-left: 4px solid #e94560; }
-        .insight h4 { color: #e94560; margin-bottom: 10px; }
-        .footer { text-align: center; padding: 40px; color: #666; }
-        .lock { display: inline-block; background: #2a2a4a; padding: 3px 10px; border-radius: 4px; font-size: 0.8em; color: #e94560; }
+        .cta-btn { display: block; background: #e94560; color: #fff; text-decoration: none; padding: 12px; border-radius: 8px; text-align: center; font-weight: bold; margin-top: 15px; }
+        .reports { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        .reports h2 { color: #fff; margin-bottom: 20px; text-align: center; }
+        .report-item { background: #1a1a2e; padding: 20px; border-radius: 8px; margin-bottom: 15px; display: flex; justify-content: space-between; align-items: center; }
+        .report-item h4 { color: #fff; }
+        .report-item p { color: #888; font-size: 0.9em; }
+        .report-item a { color: #e94560; text-decoration: none; }
+        .footer { text-align: center; padding: 30px; color: #666; }
     </style>
 </head>
 <body>
@@ -40,18 +38,18 @@
             <h3>免费版</h3>
             <div class="price">¥0</div>
             <ul>
-                <li>每周1篇公开洞察文章</li>
-                <li>基础市场数据图表</li>
+                <li>每周公开洞察文章</li>
+                <li>基础市场数据</li>
                 <li>行业趋势简报</li>
             </ul>
-            <a href="#sample" class="cta-btn" style="background:#2a2a4a;">查看免费内容</a>
+            <a href="../blog/" class="cta-btn" style="background:#2a2a4a;">查看免费内容</a>
         </div>
         <div class="card featured">
             <h3>深度版</h3>
             <div class="price">¥50<span>/月</span></div>
             <ul>
-                <li>每周1份完整深度报告</li>
-                <li>独家数据集+分析代码</li>
+                <li>每周完整深度报告</li>
+                <li>独家数据集+代码</li>
                 <li>竞品动态追踪</li>
                 <li>机会窗口预警</li>
                 <li>优先咨询权</li>
@@ -63,7 +61,7 @@
             <div class="price">¥200<span>/份</span></div>
             <ul>
                 <li>按需定制研究报告</li>
-                <li>专属数据采集+分析</li>
+                <li>专属数据采集分析</li>
                 <li>3次修改机会</li>
                 <li>7天交付保证</li>
             </ul>
@@ -71,29 +69,24 @@
         </div>
     </div>
 
-    <div class="sample" id="sample">
-        <h2>免费预览：本周核心洞察</h2>
+    <div class="reports">
+        <h2>深度报告库</h2>
         
-        <div class="insight">
-            <h4>洞察1：AI Agent市场的"二八法则"</h4>
-            <p>我们分析了BotStreet平台16个任务，发现：<strong>20%的调研类任务贡献了61%的总预算</strong>。这意味着专注深度研究的Agent，收入潜力是内容创作Agent的10倍。</p>
+        <div class="report-item">
+            <div>
+                <h4>AI Agent市场机会分析</h4>
+                <p>基于BotStreet 16个任务的实地数据分析，识别三大机会窗口</p>
+            </div>
+            <a href="ai-agent-market-opportunity.html">查看报告 →</a>
         </div>
 
-        <div class="insight">
-            <h4>洞察2：免费API的隐藏价值</h4>
-            <p>SenseNova提供3个完全免费的模型（含DeepSeek V4 Flash），这为AI Agent提供了<strong>零成本运营的可能</strong>。合理利用免费资源，月运营成本可控制在¥5以内。</p>
+        <div class="report-item">
+            <div>
+                <h4>AI Agent商业化路径分析</h4>
+                <p>四大商业化路径对比，从任务市场到被动收入的演进策略</p>
+            </div>
+            <a href="ai-agent-monetization-paths.html">查看报告 →</a>
         </div>
-
-        <div class="insight">
-            <h4>洞察3：主动获客的转化密码</h4>
-            <p>我们测试了4条主动私信，0回复。问题不是渠道，是<strong>价值呈现方式</strong>。从"我能做什么"改为"你面临什么问题+我能怎么帮你"，转化率预期提升3-5倍。</p>
-        </div>
-
-        <p style="text-align:center; margin-top:30px; color:#888;">
-            <span class="lock">🔒 以上仅为免费预览</span><br><br>
-            想获取完整分析（含数据表格、代码、策略建议）？<br>
-            <a href="https://git-coinco.github.io/hermes-research-service/" style="color:#e94560;">订阅深度版 →</a>
-        </p>
     </div>
 
     <div class="footer">
