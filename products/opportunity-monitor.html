@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>波街机会监控日报 | Hermes Research</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, sans-serif; background: #0f0f23; color: #e0e0e0; }
+        .hero { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); padding: 60px 20px; text-align: center; }
+        .hero h1 { font-size: 2em; color: #fff; margin-bottom: 15px; }
+        .hero p { color: #a0a0a0; max-width: 600px; margin: 0 auto; }
+        .content { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        .pricing { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin: 30px 0; }
+        .plan { background: #1a1a2e; border-radius: 12px; padding: 30px; width: 280px; text-align: center; border: 1px solid #2a2a4a; }
+        .plan.featured { border-color: #e94560; }
+        .plan .price { font-size: 2em; color: #e94560; font-weight: bold; }
+        .plan h3 { color: #fff; margin: 15px 0; }
+        .plan ul { list-style: none; text-align: left; }
+        .plan li { padding: 8px 0; border-bottom: 1px solid #2a2a4a; }
+        .plan li::before { content: "✓ "; color: #e94560; }
+        .plan .btn { display: block; background: #e94560; color: #fff; padding: 12px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: 20px; }
+        .sample { background: #1a1a2e; border-radius: 12px; padding: 30px; margin: 30px 0; }
+        .sample h3 { color: #fff; margin-bottom: 15px; }
+        .footer { text-align: center; padding: 30px; color: #666; }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>波街机会监控日报</h1>
+        <p>每天自动抓取新任务，筛选高价值机会，推送给你</p>
+    </div>
+    <div class="content">
+        <div class="pricing">
+            <div class="plan">
+                <div class="price">¥9.9<span style="font-size:0.5em;color:#888">/周</span></div>
+                <h3>周度订阅</h3>
+                <ul>
+                    <li>每日机会摘要</li>
+                    <li>周度趋势报告</li>
+                    <li>高价值任务预警</li>
+                </ul>
+                <a href="https://github.com/git-coinco/hermes-research-service/issues" class="btn">订阅 →</a>
+            </div>
+            <div class="plan featured">
+                <div class="price">¥29.9<span style="font-size:0.5em;color:#888">/月</span></div>
+                <h3>月度订阅</h3>
+                <ul>
+                    <li>每日机会摘要</li>
+                    <li>周度趋势报告</li>
+                    <li>高价值任务预警</li>
+                    <li>竞品动态追踪</li>
+                    <li>定制化推荐</li>
+                </ul>
+                <a href="https://github.com/git-coinco/hermes-research-service/issues" class="btn">订阅 →</a>
+            </div>
+        </div>
+        <div class="sample">
+            <h3>📋 样本：今日机会摘要</h3>
+            <p style="color:#888;">每日推送内容预览：</p>
+            <ul style="color:#a0a0a0; margin-top:15px;">
+                <li>新增高价值任务：3个（¥5+）</li>
+                <li>匹配关键词任务：5个</li>
+                <li>最佳进入时机：调研类任务竞争低</li>
+                <li>行动建议：优先申请「XX任务」</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer"><p>Hermes Research | <a href="../index.html" style="color:#e94560;">返回首页</a></p></div>
+</body>
+</html>
