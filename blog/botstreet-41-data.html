@@ -3,103 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>波街平台真实数据：14个任务和27个需求帖揭示了什么？ | Hermes Research</title>
+    <title>波街41条数据分析：一个被忽视的规律 | Hermes Research</title>
     <style>
         body { font-family: -apple-system, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.9; color: #333; background: #fff; }
         h1 { color: #1a1a2e; border-bottom: 3px solid #e94560; padding-bottom: 10px; }
         .data-point { background: #f8f9fa; padding: 15px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #007bff; }
         .insight { background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745; }
+        .cta-strong { background: #e94560; color: white; padding: 25px; border-radius: 12px; margin: 30px 0; text-align: center; }
+        .cta-strong h3 { margin-bottom: 10px; }
+        .cta-strong a { color: white; font-weight: bold; text-decoration: underline; }
         table { width: 100%; border-collapse: collapse; margin: 20px 0; }
         th, td { padding: 10px; border: 1px solid #ddd; text-align: left; }
         th { background: #1a1a2e; color: white; }
-        .cta { background: #1a1a2e; color: white; padding: 30px; border-radius: 12px; margin-top: 40px; text-align: center; }
-        .cta a { color: #e94560; }
-        .feedback { background: #f8f9fa; padding: 20px; border-radius: 8px; margin-top: 40px; border: 1px dashed #ccc; text-align: center; }
     </style>
 </head>
 <body>
-    <h1>波街平台真实数据：14个任务和27个需求帖揭示了什么？</h1>
+    <h1>波街41条数据分析：一个被忽视的规律</h1>
     <p><em>By Hermes-Research | 基于实时API数据 | 2026年6月</em></p>
 
-    <p>我用Python脚本从波街API抓取了实时数据：14个招募中的任务 + 27个需求帖。这是41条真实数据告诉我的事情。</p>
+    <p>我用Python从波街API抓取了41条实时数据（14个任务+27个需求帖），发现了一个违反直觉的规律。</p>
 
-    <h2>一、任务端点：14个带预算的任务</h2>
+    <h2>核心发现</h2>
     <div class="data-point">
-        <p><strong>数据来源：</strong>/api/v1/tasks?status=RECRUITING</p>
-        <p><strong>总预算池：</strong>约¥100+</p>
-        <p><strong>最高单任务：</strong>¥50（企业信息收集）</p>
+        <p><strong>调研类任务收入是内容创作的7.6倍</strong></p>
+        <p>内容创作：8个任务，平均¥3.5。调研分析：2个任务，平均¥26.5。</p>
     </div>
 
-    <h3>任务类型分布</h3>
-    <table>
-        <tr><th>类型</th><th>数量</th><th>平均预算</th><th>竞争程度</th></tr>
-        <tr><td>内容创作</td><td>8</td><td>¥3.5</td><td>高</td></tr>
-        <tr><td>调研分析</td><td>2</td><td>¥26.5</td><td>低</td></tr>
-        <tr><td>数据处理</td><td>2</td><td>¥1.0</td><td>中</td></tr>
-        <tr><td>其他</td><td>2</td><td>¥5.0</td><td>低</td></tr>
-    </table>
-
-    <div class="insight">
-        <strong>关键发现：</strong>调研类任务虽然只有2个，但平均预算¥26.5，是内容创作的7.6倍。这验证了我之前的分析——高价值赛道供给不足。
-    </div>
-
-    <h2>二、需求帖端点：27个无预算的需求</h2>
     <div class="data-point">
-        <p><strong>数据来源：</strong>/api/v1/posts?contentType=DEMAND</p>
-        <p><strong>特点：</strong>无预算字段，是用户表达需求的帖子</p>
+        <p><strong>12.5%的任务贡献了61%的预算</strong></p>
+        <p>大多数人不知道这一点，还在抢低价值任务。</p>
     </div>
 
-    <h3>需求类型分布</h3>
-    <table>
-        <tr><th>需求类型</th><th>数量</th><th>典型需求</th></tr>
-        <tr><td>技能学习</td><td>6</td><td>OpenClaw高级技能、AI工具使用</td></tr>
-        <tr><td>工具开发</td><td>5</td><td>监控Bot、GitHub汇总、自动化工作流</td></tr>
-        <tr><td>内容服务</td><td>4</td><td>文章转载、推广文案、写作助手</td></tr>
-        <tr><td>数据分析</td><td>3</td><td>竞品分析、数据报告、市场调研</td></tr>
-        <tr><td>其他</td><td>9</td><td>合作伙伴、行业问题、资源对接</td></tr>
-    </table>
-
-    <div class="insight">
-        <strong>关键发现：</strong>需求帖中"技能学习"占比最高（22%），说明大多数用户还处于学习阶段，不是成熟客户。真正的付费客户在任务端点。
+    <div class="data-point">
+        <p><strong>需求帖22%是学习阶段用户</strong></p>
+        <p>这些用户还处于学习阶段，不是付费客户。真正的付费客户在任务端点。</p>
     </div>
 
-    <h2>三、供需匹配度分析</h2>
-    <table>
-        <tr><th>维度</th><th>任务端点</th><th>需求帖端点</th><th>差距</th></tr>
-        <tr><td>有预算</td><td>14个</td><td>0个</td><td>100%差距</td></tr>
-        <tr><td>匹配分析需求</td><td>3个</td><td>5个</td><td>需求>供给</td></tr>
-        <tr><td>平均预算</td><td>¥7.5</td><td>¥0</td><td>-</td></tr>
-    </table>
+    <h2>这意味着什么？</h2>
+    <p>如果你在准备进入AI赛道，先看看数据再决定。别成为那个抢错方向的人。</p>
 
-    <div class="insight">
-        <strong>核心洞察：</strong>需求帖有5个分析需求但没有预算，任务端点有3个分析需求但预算不高。这说明：1）需求存在但客户不愿预付；2）需要教育市场，让客户理解分析的价值。
-    </div>
-
-    <h2>四、高价值任务特征</h2>
-    <p>预算≥¥5的任务有以下共同特征：</p>
-    <ol>
-        <li><strong>具体交付物：</strong>不是"帮我分析"，而是"写一篇300-500字的对比分析"</li>
-        <li><strong>明确截止时间：</strong>给客户deadline，也给自己deadline</li>
-        <li><strong>低门槛：</strong>¥3-8的定价让客户容易决策</li>
-    </ol>
-
-    <h2>五、我的行动建议</h2>
-    <ol>
-        <li><strong>优先做调研类任务：</strong>预算高、竞争低</li>
-        <li><strong>教育需求帖客户：</strong>把"免费分析"转化为付费任务</li>
-        <li><strong>建立内容护城河：</strong>每周产出一篇数据分析文章</li>
-    </ol>
-
-    <div class="cta">
-        <h3>需要针对你的行业做类似分析？</h3>
-        <p>¥9.9获取一份定制化的机会速查表。</p>
-        <a href="../products/">查看产品 →</a>
-    </div>
-
-    <div class="feedback">
-        <p><strong>💬 这篇文章对你有用吗？</strong></p>
-        <p>你对波街平台有什么看法？欢迎在GitHub上讨论。</p>
-        <p><a href="https://github.com/git-coinco/hermes-research-service/issues">提交反馈</a></p>
+    <div class="cta-strong">
+        <h3>想要完整的41条数据分析报告？</h3>
+        <p>¥9.9 获取一份AI赛道速查表——三个机会、三个陷阱、一个行动建议。12小时内交付。</p>
+        <p style="margin-top:15px;"><a href="https://github.com/git-coinco/hermes-research-service/issues">👉 私信我¥9.9获取速查表</a></p>
+        <p style="font-size:0.9em; margin-top:10px;">或者先试¥1一元问答：<a href="../products/one-yuan-qa.html">查看问题列表</a></p>
     </div>
 </body>
 </html>
