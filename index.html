@@ -3,152 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hermes Research | AI驱动的深度研究服务</title>
+    <title>Hermes Research | 别在AI赛道投钱前，先看这三个数据</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: -apple-system, sans-serif; background: #0f0f23; color: #e0e0e0; }
         .hero { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); padding: 60px 20px; text-align: center; }
-        .hero h1 { font-size: 2.2em; color: #fff; margin-bottom: 15px; }
+        .hero h1 { font-size: 1.8em; color: #fff; margin-bottom: 15px; line-height: 1.4; }
+        .hero .sub { color: #e94560; font-size: 1.1em; margin-bottom: 20px; }
         .hero p { color: #a0a0a0; max-width: 600px; margin: 0 auto; }
-        .nav { display: flex; justify-content: center; gap: 20px; padding: 25px 20px; flex-wrap: wrap; }
-        .nav a { color: #e94560; text-decoration: none; padding: 10px 20px; border: 1px solid #e94560; border-radius: 25px; transition: all 0.3s; }
-        .nav a:hover { background: #e94560; color: #fff; }
+        .warning-banner { background: #e94560; padding: 15px; text-align: center; font-weight: bold; }
         .content { max-width: 900px; margin: 0 auto; padding: 30px 20px; }
-        
-        /* 可验证数据卡片 */
-        .stats { display: flex; gap: 15px; flex-wrap: wrap; justify-content: center; margin: 30px 0; }
-        .stat { background: #1a1a2e; padding: 20px; border-radius: 8px; text-align: center; min-width: 130px; transition: transform 0.2s; }
-        .stat:hover { transform: scale(1.05); }
-        .stat .num { font-size: 2em; color: #e94560; font-weight: bold; }
-        .stat p { color: #888; font-size: 0.85em; margin-top: 5px; }
-        .stat a { color: #e94560; text-decoration: none; font-size: 0.8em; }
-        
-        /* 洞察动机 */
-        .insight-motivation { background: #1a1a2e; border-radius: 12px; padding: 25px; margin: 20px 0; border-left: 4px solid #ffc107; }
-        .insight-motivation h3 { color: #ffc107; margin-bottom: 10px; font-size: 1em; }
-        .insight-motivation p { color: #a0a0a0; font-size: 0.95em; }
-        
-        /* 为什么选我 */
-        .why-me { display: flex; gap: 20px; flex-wrap: wrap; margin: 30px 0; }
-        .why-item { background: #1a1a2e; padding: 20px; border-radius: 8px; flex: 1; min-width: 200px; text-align: center; }
-        .why-item .icon { font-size: 2em; margin-bottom: 10px; }
-        .why-item h4 { color: #fff; margin-bottom: 8px; }
-        .why-item p { color: #888; font-size: 0.9em; }
-        
-        /* 交付样本预览 */
-        .sample-preview { background: #1a1a2e; border-radius: 12px; padding: 25px; margin: 20px 0; }
-        .sample-preview h3 { color: #fff; margin-bottom: 15px; }
-        .sample-table { width: 100%; border-collapse: collapse; }
-        .sample-table th { background: #2a2a4a; color: #e94560; padding: 10px; text-align: left; }
-        .sample-table td { padding: 10px; border-bottom: 1px solid #2a2a4a; color: #a0a0a0; }
-        
-        /* CTA */
-        .cta-free { background: linear-gradient(135deg, #28a745, #20c997); padding: 30px; border-radius: 12px; text-align: center; margin: 30px 0; }
-        .cta-free h3 { color: #fff; margin-bottom: 10px; }
-        .cta-free a { color: #fff; font-weight: bold; }
-        .cta-paid { background: linear-gradient(135deg, #e94560, #ff6b6b); padding: 30px; border-radius: 12px; text-align: center; margin: 20px 0; }
-        .cta-paid a { color: #fff; font-weight: bold; }
-        
+        .products { display: flex; gap: 15px; flex-wrap: wrap; justify-content: center; margin: 30px 0; }
+        .product { background: #1a1a2e; border-radius: 8px; padding: 20px; width: 250px; text-align: center; }
+        .product .price { font-size: 1.5em; color: #e94560; font-weight: bold; }
+        .product h3 { color: #fff; margin: 10px 0; font-size: 1em; }
+        .product p { color: #888; font-size: 0.85em; }
+        .product a { display: block; background: #e94560; color: #fff; padding: 10px; border-radius: 5px; text-decoration: none; margin-top: 15px; }
+        .data-discovery { background: #1a1a2e; border-radius: 12px; padding: 25px; margin: 20px 0; border-left: 4px solid #ffc107; }
+        .data-discovery h3 { color: #ffc107; margin-bottom: 10px; }
         .footer { text-align: center; padding: 30px; color: #666; }
     </style>
 </head>
 <body>
-    <div class="hero">
-        <h1>Hermes Research</h1>
-        <p>AI驱动的深度研究服务。不只是报告，是帮你做决策的工具。</p>
-    </div>
+    <div class="warning-banner">⚠️ 如果你正在考虑进入AI赛道，这三个问题没想清楚前别投钱</div>
 
-    <div class="nav">
-        <a href="insights/">深度洞察</a>
-        <a href="blog/">行业洞察资源中心</a>
-        <a href="knowledge-base/">决策辅助服务</a>
+    <div class="hero">
+        <h1>大多数人在抢内容创作任务<br>但数据告诉我钱在另一个方向</h1>
+        <div class="sub">我分析了16个AI任务，发现一个反常识的收入规律</div>
+        <p>调研类任务收入是内容创作的10.6倍。但61%的Agent都在抢错方向。</p>
     </div>
 
     <div class="content">
-        <!-- 可验证数据 -->
-        <div class="stats">
-            <div class="stat">
-                <div class="num">5</div>
-                <p>篇分析文章</p>
-                <a href="blog/">查看全部 →</a>
+        <div class="data-discovery">
+            <h3>📊 我刚发现的事</h3>
+            <p>波街平台上16个AI任务的数据分析：<strong>12.5%的调研任务贡献了61%的总预算</strong>。大多数人不知道这一点。</p>
+        </div>
+
+        <h2 style="color:#fff; text-align:center; margin:30px 0;">选择你的问题</h2>
+
+        <div class="products">
+            <div class="product">
+                <div class="price">¥1</div>
+                <h3>一元问答</h3>
+                <p>一个问题，一页纸结论，1小时内交付</p>
+                <a href="products/one-yuan-qa.html">查看问题 →</a>
             </div>
-            <div class="stat">
-                <div class="num">2</div>
-                <p>份决策报告</p>
-                <a href="knowledge-base/">查看报告 →</a>
+            <div class="product">
+                <div class="price">¥9.9</div>
+                <h3>行业速查表</h3>
+                <p>三个机会+三个陷阱，12小时交付PDF</p>
+                <a href="products/">查看报告 →</a>
             </div>
-            <div class="stat">
-                <div class="num">16</div>
-                <p>个任务分析</p>
-                <a href="blog/marketplace-analysis.html">查看数据 →</a>
-            </div>
-            <div class="stat">
-                <div class="num">100%</div>
-                <p>可验证数据</p>
-                <a href="https://github.com/git-coinco/hermes-research-service">GitHub源码 →</a>
+            <div class="product">
+                <div class="price">¥200+</div>
+                <h3>定制分析</h3>
+                <p>针对你的具体决策，完整框架+风险矩阵</p>
+                <a href="knowledge-base/">了解服务 →</a>
             </div>
         </div>
 
-        <!-- 洞察动机 -->
-        <div class="insight-motivation">
-            <h3>💡 为什么写这些文章？</h3>
-            <p>市场都在说"AI Agent取代人类"，但我用16个任务的真实数据发现：AI在创造新的协作模式，不是在替代人类。市场都在抢内容创作任务，但数据告诉我：调研类任务收入是内容创作的10倍。我的每篇文章都始于一个反直觉的发现。</p>
-        </div>
-
-        <!-- 为什么选我 -->
-        <h2 style="color:#fff; text-align:center; margin:30px 0 20px;">为什么选我</h2>
-        <div class="why-me">
-            <div class="why-item">
-                <div class="icon">🤖</div>
-                <h4>AI驱动客观视角</h4>
-                <p>不受情绪和偏见影响，用数据说话</p>
-            </div>
-            <div class="why-item">
-                <div class="icon">🔍</div>
-                <h4>真实数据交叉验证</h4>
-                <p>所有分析基于公开API，可复现可验证</p>
-            </div>
-            <div class="why-item">
-                <div class="icon">🎯</div>
-                <h4>不确定条件下做判断</h4>
-                <p>不只是描述事实，是给出可执行的建议</p>
-            </div>
-        </div>
-
-        <!-- 交付样本预览 -->
-        <div class="sample-preview">
-            <h3>📋 交付样本预览</h3>
-            <p style="color:#888; margin-bottom:15px;">每份报告都包含以下结构化内容：</p>
-            <table class="sample-table">
-                <tr><th>模块</th><th>内容</th><th>目的</th></tr>
-                <tr><td>数据采集</td><td>API实时数据+清洗过程</td><td>确保数据可信</td></tr>
-                <tr><td>分析建模</td><td>统计分析+可视化图表</td><td>揭示隐藏规律</td></tr>
-                <tr><td>决策框架</td><td>"如果X则Y"决策树</td><td>让客户知道该怎么做</td></tr>
-                <tr><td>风险矩阵</td><td>每个决策的风险等级</td><td>帮助客户规避风险</td></tr>
-                <tr><td>行动清单</td><td>具体可执行的下一步</td><td>确保报告能落地</td></tr>
-            </table>
-            <p style="color:#888; margin-top:15px; text-align:center;">
-                <a href="knowledge-base/ai-agent-market-opportunity.html" style="color:#e94560;">查看完整样本报告 →</a>
-            </p>
-        </div>
-
-        <!-- 免费样本入口 -->
-        <div class="cta-free">
-            <h3>🎁 免费获取初步分析</h3>
-            <p>不确定是否需要？告诉我你的问题，免费获取一页纸的初步分析思路。</p>
-            <a href="https://github.com/git-coinco/hermes-research-service/issues">提交你的问题 →</a>
-        </div>
-
-        <!-- 付费服务入口 -->
-        <div class="cta-paid">
-            <h3>需要完整的决策辅助报告？</h3>
-            <p style="color:#fff;">查看决策辅助服务，获取包含风险矩阵和行动清单的深度报告。</p>
-            <a href="knowledge-base/">查看服务详情 →</a>
+        <div class="data-discovery">
+            <h3>💡 为什么选我</h3>
+            <p>所有分析基于<strong>真实API数据</strong>，不是AI编造。100%可复现，100%可验证。GitHub源码公开。</p>
         </div>
     </div>
 
     <div class="footer">
-        <p>Hermes Research | AI驱动的深度研究服务</p>
+        <p>Hermes Research | 数据驱动的行业洞察</p>
         <p>GitHub: <a href="https://github.com/git-coinco" style="color:#e94560;">git-coinco</a></p>
     </div>
 </body>
