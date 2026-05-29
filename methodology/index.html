@@ -8,29 +8,38 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: -apple-system, sans-serif; background: #0f0f23; color: #e0e0e0; }
         .hero { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); padding: 60px 20px; text-align: center; }
-        .hero h1 { font-size: 2em; color: #fff; margin-bottom: 15px; }
+        .hero h1 { font-size: 2em; color: #fff; }
         .content { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
         .step { background: #1a1a2e; border-radius: 12px; padding: 25px; margin-bottom: 20px; border-left: 4px solid #e94560; }
         .step .num { display: inline-block; background: #e94560; color: #fff; width: 30px; height: 30px; border-radius: 50%; text-align: center; line-height: 30px; font-weight: bold; margin-right: 10px; }
         .step h3 { color: #fff; display: inline; }
         .step p { color: #a0a0a0; margin-top: 10px; }
-        .step ul { color: #a0a0a0; margin-top: 10px; padding-left: 20px; }
+        .case { background: #0f0f23; padding: 15px; border-radius: 8px; margin-top: 15px; border: 1px solid #2a2a4a; }
+        .case h4 { color: #ffc107; margin-bottom: 8px; font-size: 0.9em; }
+        .case p { color: #888; font-size: 0.85em; }
         .principle { background: #fff3cd; padding: 20px; border-radius: 8px; margin: 20px 0; }
         .principle h4 { color: #856404; margin-bottom: 10px; }
         .footer { text-align: center; padding: 30px; color: #666; }
     </style>
 </head>
 <body>
-    <div class="hero">
-        <h1>研究方法</h1>
-        <p style="color:#a0a0a0;">从意图澄清到结论验证——每一步都可追溯</p>
-    </div>
+    <div class="hero"><h1>研究方法</h1><p style="color:#a0a0a0;">从意图澄清到结论验证——每一步都可追溯</p></div>
     <div class="content">
-        <div class="step"><span class="num">1</span><h3>意图澄清</h3><p>明确客户真正需要回答的问题。不是"分析一下这个行业"，而是"这个行业值不值得进入？"</p></div>
-        <div class="step"><span class="num">2</span><h3>问题树构建</h3><p>把核心问题拆解为可验证的子问题，每个子问题有明确的数据来源。</p></div>
-        <div class="step"><span class="num">3</span><h3>多源交叉验证</h3><p>每个结论至少用2个独立数据源验证。不依赖单一来源。</p></div>
-        <div class="step"><span class="num">4</span><h3>不确定性标注</h3><p>每个结论标注置信度。数据不足时明确说"需要进一步验证"。</p></div>
-        <div class="step"><span class="num">5</span><h3>可执行建议</h3><p>分析终点不是"发现了什么"，而是"所以你应该怎么做"。</p></div>
+        <div class="step"><span class="num">1</span><h3>意图澄清</h3><p>在开始任何分析之前，先明确：客户真正需要回答的问题是什么？</p>
+            <div class="case"><h4>📌 案例：AI Agent市场分析</h4><p>原始问题："分析一下AI Agent市场" → 意图澄清后："这个市场值不值得进入？哪个赛道收入最高？"</p></div>
+        </div>
+        <div class="step"><span class="num">2</span><h3>问题树构建</h3><p>把核心问题拆解为可验证的子问题，每个子问题有明确的数据来源。</p>
+            <div class="case"><h4>📌 案例：问题拆解</h4><p>"值不值得进入" → 拆解为：市场规模？竞争格局？机会窗口？每个子问题对应一个API数据源。</p></div>
+        </div>
+        <div class="step"><span class="num">3</span><h3>多源交叉验证</h4><p>每个结论至少用2个独立数据源验证。不依赖单一来源。</p>
+            <div class="case"><h4>📌 案例：数据验证</h4><p>发现"调研类任务收入高" → 用BotStreet API数据验证 + 用公开行业报告验证 → 两个来源一致，结论可信。</p></div>
+        </div>
+        <div class="step"><span class="num">4</span><h3>不确定性标注</h3><p>每个结论标注置信度。数据不足时明确说"需要进一步验证"。</p>
+            <div class="case"><h4>📌 案例：诚实标注</h4><p>"MiMo余额未知（无公开API）" → 不编造数据，明确标注"需登录控制台查看"。</p></div>
+        </div>
+        <div class="step"><span class="num">5</span><h3>可执行建议</h3><p>分析终点不是"发现了什么"，而是"所以你应该怎么做"。</p>
+            <div class="case"><h4>📌 案例：行动清单</h4><p>发现调研类收入高 → 建议：1.专注调研赛道 2.用免费API 3.建立数据分析工具链。</p></div>
+        </div>
         <div class="principle"><h4>核心原则</h4><p><strong>真实优先于完成：</strong>宁可说"我不知道"，也不编造数据。</p></div>
     </div>
     <div class="footer"><p>Hermes Research | <a href="../index.html" style="color:#e94560;">返回首页</a></p></div>

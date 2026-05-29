@@ -8,96 +8,28 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: -apple-system, sans-serif; background: #0f0f23; color: #e0e0e0; }
         .hero { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); padding: 60px 20px; text-align: center; }
-        .hero h1 { font-size: 2em; color: #fff; margin-bottom: 15px; }
-        .hero .price { font-size: 3em; color: #e94560; font-weight: bold; margin: 20px 0; }
-        .hero p { color: #a0a0a0; }
+        .hero h1 { font-size: 2em; color: #fff; }
+        .hero .price { font-size: 3em; color: #e94560; font-weight: bold; margin: 15px 0; }
         .content { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
-        .qa-list { margin: 30px 0; }
-        .qa-item { background: #1a1a2e; border-radius: 8px; padding: 20px; margin-bottom: 15px; display: flex; justify-content: space-between; align-items: center; }
-        .qa-item h3 { color: #fff; font-size: 1em; }
-        .qa-item p { color: #888; font-size: 0.9em; margin-top: 5px; }
-        .qa-item .btn { background: #e94560; color: #fff; padding: 8px 20px; border-radius: 20px; text-decoration: none; font-weight: bold; white-space: nowrap; }
-        .pay-section { background: #1a1a2e; border-radius: 12px; padding: 30px; margin: 30px 0; text-align: center; }
-        .pay-section h3 { color: #fff; margin-bottom: 20px; }
-        .pay-methods { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
-        .pay-method { text-align: center; }
-        .pay-method img { width: 150px; height: 150px; background: #2a2a4a; border-radius: 8px; display: block; margin-bottom: 10px; }
-        .pay-method p { color: #888; font-size: 0.9em; }
-        .promise { background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center; }
-        .promise h4 { color: #28a745; margin-bottom: 10px; }
+        .qa-item { background: #1a1a2e; border-radius: 8px; padding: 20px; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center; }
+        .qa-item h3 { color: #fff; font-size: 0.95em; }
+        .qa-item p { color: #888; font-size: 0.85em; margin-top: 5px; }
+        .qa-item .btn { background: #e94560; color: #fff; padding: 8px 18px; border-radius: 20px; text-decoration: none; font-weight: bold; white-space: nowrap; }
         .footer { text-align: center; padding: 30px; color: #666; }
     </style>
 </head>
 <body>
-    <div class="hero">
-        <h1>一元问答</h1>
-        <div class="price">¥1</div>
-        <p>一个问题，一页纸结论，1小时内交付</p>
-    </div>
-
+    <div class="hero"><h1>一元问答</h1><div class="price">¥1</div><p style="color:#a0a0a0;">一个问题，一页纸结论，1小时内交付</p></div>
     <div class="content">
-        <div class="qa-list">
-            <div class="qa-item">
-                <div>
-                    <h3>现在做AI Agent客服还有机会吗？</h3>
-                    <p>市场饱和度、竞争格局、进入壁垒分析</p>
-                </div>
-                <a href="https://github.com/git-coinco/hermes-research-service/issues" class="btn">¥1购买</a>
-            </div>
-            <div class="qa-item">
-                <div>
-                    <h3>AI编程工具会压缩程序员需求吗？</h3>
-                    <p>需求变化趋势、新机会、风险预警</p>
-                </div>
-                <a href="https://github.com/git-coinco/hermes-research-service/issues" class="btn">¥1购买</a>
-            </div>
-            <div class="qa-item">
-                <div>
-                    <h3>个人开发者如何用AI赚到第一桶金？</h3>
-                    <p>真实案例、可复制路径、避坑指南</p>
-                </div>
-                <a href="https://github.com/git-coinco/hermes-research-service/issues" class="btn">¥1购买</a>
-            </div>
-            <div class="qa-item">
-                <div>
-                    <h3>AI Agent赛道哪个细分领域最赚钱？</h3>
-                    <p>收入数据对比、机会窗口、进入策略</p>
-                </div>
-                <a href="https://github.com/git-coinco/hermes-research-service/issues" class="btn">¥1购买</a>
-            </div>
-            <div class="qa-item">
-                <div>
-                    <h3>如何判断一个AI项目值不值得投？</h3>
-                    <p>评估框架、风险信号、决策清单</p>
-                </div>
-                <a href="https://github.com/git-coinco/hermes-research-service/issues" class="btn">¥1购买</a>
-            </div>
-        </div>
-
-        <div class="pay-section">
-            <h3>付款方式</h3>
-            <div class="pay-methods">
-                <div class="pay-method">
-                    <div style="width:150px;height:150px;background:#2a2a4a;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#888;">支付宝收款码</div>
-                    <p>扫码支付¥1</p>
-                </div>
-                <div class="pay-method">
-                    <div style="width:150px;height:150px;background:#2a2a4a;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#888;">微信收款码</div>
-                    <p>扫码支付¥1</p>
-                </div>
-            </div>
-            <p style="color:#888; margin-top:20px;">支付后在GitHub Issues留言你的问题，1小时内交付</p>
-        </div>
-
-        <div class="promise">
-            <h4>🛡️ 零风险承诺</h4>
-            <p>1小时内交付一页纸结论。不满意？退款，分文不取。</p>
-        </div>
+        <div class="qa-item"><div><h3>现在做AI Agent客服还有机会吗？</h3><p>市场饱和度、竞争格局、进入壁垒</p></div><a href="https://github.com/git-coinco/hermes-research-service/issues" class="btn">¥1</a></div>
+        <div class="qa-item"><div><h3>AI编程工具会压缩程序员需求吗？</h3><p>需求变化趋势、新机会、风险预警</p></div><a href="https://github.com/git-coinco/hermes-research-service/issues" class="btn">¥1</a></div>
+        <div class="qa-item"><div><h3>个人开发者如何用AI赚到第一桶金？</h3><p>真实案例、可复制路径、避坑指南</p></div><a href="https://github.com/git-coinco/hermes-research-service/issues" class="btn">¥1</a></div>
+        <div class="qa-item"><div><h3>AI Agent赛道哪个细分领域最赚钱？</h3><p>收入数据对比、机会窗口、进入策略</p></div><a href="https://github.com/git-coinco/hermes-research-service/issues" class="btn">¥1</a></div>
+        <div class="qa-item"><div><h3>如何判断一个AI项目值不值得投？</h3><p>评估框架、风险信号、决策清单</p></div><a href="https://github.com/git-coinco/hermes-research-service/issues" class="btn">¥1</a></div>
+        <div class="qa-item"><div><h3>2026年AI创业最大的坑是什么？</h3><p>常见失败案例、避坑指南、成功要素</p></div><a href="https://github.com/git-coinco/hermes-research-service/issues" class="btn">¥1</a></div>
+        <div class="qa-item"><div><h3>免费AI API够用吗？还是必须付费？</h3><p>免费API对比、成本分析、适用场景</p></div><a href="https://github.com/git-coinco/hermes-research-service/issues" class="btn">¥1</a></div>
+        <div class="qa-item"><div><h3>如何用数据驱动AI创业决策？</h3><p>数据分析方法、工具推荐、实操案例</p></div><a href="https://github.com/git-coinco/hermes-research-service/issues" class="btn">¥1</a></div>
     </div>
-
-    <div class="footer">
-        <p>Hermes Research | 一元问答</p>
-        <p><a href="../index.html" style="color:#e94560;">返回首页</a></p>
-    </div>
+    <div class="footer"><p>Hermes Research | <a href="../index.html" style="color:#e94560;">返回首页</a></p></div>
 </body>
 </html>
