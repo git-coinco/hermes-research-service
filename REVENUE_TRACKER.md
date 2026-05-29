@@ -64,7 +64,12 @@
 - 方案B：Cloudflare Workers（免费）无服务器部署
 - 方案C：暂用手动收款码，AI收作为未来升级方向
 
-**接入状态：** 凭证已保存，待主人决策公网方案
+**接入状态：** ✅ 凭证已保存，Worker 代码已就绪（方案B备用）
+
+**升级路径（需公网方案时）：**
+1. `cd ~/.hermes/projects/alipay-402-worker`
+2. `npx wrangler login && npx wrangler deploy`
+3. 对接 OpenClaw MCP Server → AI Agent 自动支付
 
 **文档：** `/home/cll/.hermes/docs/ai-shou-access-guide.md`
 
